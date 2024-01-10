@@ -66,7 +66,7 @@
 &kp DEL           &kp CAPS      &kp PAGE_UP   &kp PAGE_DOWN  &kp F1    &kp F2                    &trans       &trans            &trans             &trans                &trans                 &trans
 &kp GRAVE         &kp N1        &kp N2        &kp N3         &kp F3    &kp F4                    &kp N6       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &kp LEFT_CONTROL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp F5    &kp F6                    &kp LEFT     &kp DOWN          &kp UP             &kp RIGHT             &kp RIGHT              &trans
-&kp LEFT_SHIFT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp F7    &kp F8  &trans    &trans  &kp KP_PLUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LBKT              &kp RBKT               &kp BSLH
+&kp LEFT_SHIFT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp F7    &kp F8  &trans    &trans  &kp KP_PLUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN         &kp GREATER_THAN       &kp BSLH
                                               &kp LEFT_ALT   &kp LCMD  &trans  &trans    &trans  &trans       &trans            &trans
             >;
 
