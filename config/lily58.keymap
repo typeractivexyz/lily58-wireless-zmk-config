@@ -134,11 +134,11 @@
 
             label = "Raise";
             bindings = <
-&kp F1          &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                   &kp F7        &kp F8         &kp F9        &kp F10    &kp F11  &kp F12
-&none           &none   &none   &none   &none   &kp C_VOL_UP                             &none         &none          &kp UP_ARROW  &none      &none    &none
-&kp LEFT_SHIFT  &none   &none   &none   &none   &kp C_VOL_DN                             &kp HOME      &kp LEFT       &kp DOWN      &kp RIGHT  &kp END  &none
-&kp LCTRL       &none   &none   &none   &none   &kp K_MUTE    &none    &none             &kp LEFT_WIN  &none          &none         &none      &none    &none
-                                &none   &none   &none         &none    &kp LC(LEFT_ALT)  &kp SPACE     &kp BACKSPACE  &kp DELETE
+&kp F1          &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                   &kp F7            &kp F8         &kp F9        &kp F10    &kp F11  &kp F12
+&none           &none   &none   &none   &none   &kp C_VOL_UP                             &none             &none          &kp UP_ARROW  &none      &none    &none
+&kp LEFT_SHIFT  &none   &none   &none   &none   &kp C_VOL_DN                             &kp HOME          &kp LEFT       &kp DOWN      &kp RIGHT  &kp END  &none
+&kp LCTRL       &none   &none   &none   &none   &kp K_MUTE    &none    &none             &kp LC(LEFT_WIN)  &none          &none         &none      &none    &none
+                                &none   &none   &none         &none    &kp LC(LEFT_ALT)  &kp SPACE         &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
