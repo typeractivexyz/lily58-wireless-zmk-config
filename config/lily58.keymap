@@ -42,11 +42,11 @@
 
             label = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &kp AMPS   &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7    &kp F8     &kp F9           &kp F10    &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp LEFT  &kp DOWN   &kp UP           &kp RIGHT  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &kp MINUS  &kp KP_PLUS      &kp LBRC   &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans    &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans    &trans    &trans  &trans     &trans   &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &kp TILDE
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans  &trans     &trans   &trans
+                                        &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,11 +62,11 @@
 
             label = "Raise";
             bindings = <
-&kp DEL           &kp CAPS      &kp PAGE_UP   &kp PAGE_DOWN  &kp F1    &kp F2                    &trans       &trans            &trans             &trans                &trans                 &trans
-&kp GRAVE         &kp N1        &kp N2        &kp N3         &kp F3    &kp F4                    &kp N6       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp LEFT_CONTROL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp F5    &kp F6                    &kp LEFT     &kp DOWN          &kp UP             &kp RIGHT             &kp RIGHT              &trans
-&kp LEFT_SHIFT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp F7    &kp F8  &trans    &trans  &kp KP_PLUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN         &kp GREATER_THAN       &kp BSLH
-                                              &kp LEFT_ALT   &kp LCMD  &trans  &trans    &trans  &trans       &trans            &trans
+&kp DEL           &kp CAPS      &kp PAGE_UP   &kp PAGE_DOWN  &trans    &trans                       &trans    &trans            &trans             &trans                &trans                 &trans
+&kp BACKSPACE     &kp N1        &kp N2        &kp N3         &trans    &trans                       &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp LEFT_CONTROL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans    &trans                       &kp LEFT  &kp DOWN          &kp UP             &kp RIGHT             &trans                 &trans
+&kp LEFT_SHIFT    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp N0    &trans  &trans       &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN         &kp GREATER_THAN       &kp BSLH
+                                              &kp LEFT_ALT   &kp LCMD  &trans  &kp ENTER    &trans  &trans    &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
