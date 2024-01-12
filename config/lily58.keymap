@@ -28,8 +28,6 @@
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C         &kp V             &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                   &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 2   &kp SPACE    &kp RET   &mo 1   &kp BSPC  &kp DELETE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
