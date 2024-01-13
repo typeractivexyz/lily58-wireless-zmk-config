@@ -116,8 +116,8 @@
             bindings = <
 &kp ESC         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)       &kp LS(NUMBER_5)                                       &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)     &kp LS(NUMBER_2)
 &kp TAB         &kp Q             &kp W             &kp E             &kp R                  &kp T                                                  &kp Y             &kp U             &kp I             &kp O             &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A             &kp S             &kp D             &kp F                  &kp G                                                  &kp H             &kp J             &kp K             &kp L             &kp SEMI             &mt GRAVE SQT
-&kp LCTRL       &kp Z             &kp X             &kp C             &kp V                  &kp B             &kp LS(MINUS)         &kp EQUAL      &kp N             &kp M             &kp COMMA         &kp DOT           &mt BACKSLASH SLASH  &none
+&kp LCTRL       &kp A             &kp S             &kp D             &kp F                  &kp G                                                  &kp H             &kp J             &kp K             &kp L             &kp SEMI             &mt GRAVE SQT
+&kp LEFT_SHIFT  &kp Z             &kp X             &kp C             &kp V                  &kp B             &kp LS(MINUS)         &kp EQUAL      &kp N             &kp M             &kp COMMA         &kp DOT           &mt BACKSLASH SLASH  &none
                                                     &none             &mt CAPSLOCK LEFT_GUI  &mo 1             &mt LEFT_ALT ENTER    &kp BACKSPACE  &kp SPACE         &mo 1             &kp DELETE
             >;
 
