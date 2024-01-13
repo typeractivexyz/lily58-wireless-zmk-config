@@ -138,7 +138,7 @@
 &none           &none   &none   &none   &none   &kp C_VOL_UP                             &none             &none          &kp UP_ARROW  &none      &none    &none
 &kp LEFT_SHIFT  &none   &none   &none   &none   &kp C_VOL_DN                             &kp HOME          &kp LEFT       &kp DOWN      &kp RIGHT  &kp END  &none
 &kp LCTRL       &none   &none   &none   &none   &kp K_MUTE    &none    &none             &kp LC(LEFT_WIN)  &none          &none         &none      &none    &none
-                                &none   &none   &none         &none    &kp LC(LEFT_ALT)  &kp SPACE         &kp BACKSPACE  &kp DELETE
+                                &none   &none   &none         &none    &kp LC(LEFT_ALT)  &kp LEFT_SHIFT    &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
