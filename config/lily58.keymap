@@ -114,11 +114,11 @@
 
             label = "Base";
             bindings = <
-&kp ESC    &sym_to_num_1  &kp LS(NUMBER_2)  &sym_to_num_3  &sym_to_num_4          &sym_to_num_5                                       &sym_to_num_6  &sym_to_num_7  &sym_to_num_8  &sym_to_num_9  &sym_to_num_0        &kp LS(NUMBER_2)
-&kp TAB    &kp Q          &kp W             &kp E          &kp R                  &kp T                                               &kp Y          &kp U          &kp I          &kp O          &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LSHFT  &kp A          &kp S             &kp D          &kp F                  &kp G                                               &kp H          &kp J          &kp K          &kp L          &kp SEMI             &mt GRAVE SQT
-&kp LCTRL  &kp Z          &kp X             &kp C          &kp V                  &kp B               &kp LS(MINUS)    &kp EQUAL      &kp N          &kp M          &kp COMMA      &kp DOT        &mt BACKSLASH SLASH  &none
-                                            &none          &mt CAPSLOCK LEFT_GUI  &mt LEFT_ALT ENTER  &mo 1            &kp BACKSPACE  &kp SPACE      &none          &kp DELETE
+&kp ESC    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)       &kp LS(NUMBER_5)                                    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)     &kp LS(NUMBER_2)
+&kp TAB    &kp Q             &kp W             &kp E             &kp R                  &kp T                                               &kp Y             &kp U             &kp I             &kp O             &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
+&kp LSHFT  &kp A             &kp S             &kp D             &kp F                  &kp G                                               &kp H             &kp J             &kp K             &kp L             &kp SEMI             &mt GRAVE SQT
+&kp LCTRL  &kp Z             &kp X             &kp C             &kp V                  &kp B               &kp LS(MINUS)    &kp EQUAL      &kp N             &kp M             &kp COMMA         &kp DOT           &mt BACKSLASH SLASH  &none
+                                               &none             &mt CAPSLOCK LEFT_GUI  &mt LEFT_ALT ENTER  &mo 1            &kp BACKSPACE  &kp SPACE         &mo 1             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -134,11 +134,11 @@
 
             label = "Raise";
             bindings = <
-&kp F1          &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                   &kp F7            &kp F8         &kp F9        &kp F10    &kp F11  &kp F12
-&none           &none   &none   &none   &none   &kp C_VOL_UP                             &none             &none          &kp UP_ARROW  &none      &none    &none
-&kp LEFT_SHIFT  &none   &none   &none   &none   &kp C_VOL_DN                             &kp HOME          &kp LEFT       &kp DOWN      &kp RIGHT  &kp END  &none
-&kp LCTRL       &none   &none   &none   &none   &kp K_MUTE    &none    &none             &kp LC(LEFT_WIN)  &none          &none         &none      &none    &none
-                                &none   &none   &none         &none    &kp LC(LEFT_ALT)  &kp LEFT_SHIFT    &kp BACKSPACE  &kp DELETE
+&kp F1          &kp F2  &kp F3        &kp F4        &kp F5        &kp F6                                          &kp F7            &kp F8         &kp F9        &kp F10    &kp F11  &kp F12
+&none           &none   &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp C_VOL_UP                                    &none             &none          &kp UP_ARROW  &none      &none    &none
+&kp LEFT_SHIFT  &none   &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp C_VOL_DN                                    &kp HOME          &kp LEFT       &kp DOWN      &kp RIGHT  &kp END  &none
+&kp LCTRL       &none   &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp K_MUTE    &none           &none             &kp LC(LEFT_WIN)  &none          &none         &none      &none    &none
+                                      &none         &none         &none         &kp NUMBER_0    &kp LC(LEFT_ALT)  &kp LEFT_SHIFT    &kp BACKSPACE  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -174,6 +174,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans  &trans  &kp NUMBER_0    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
