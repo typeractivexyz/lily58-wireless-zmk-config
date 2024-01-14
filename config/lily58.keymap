@@ -76,7 +76,7 @@
         sym_to_num_8: sym_to_num_8 {
             compatible = "zmk,behavior-mod-morph";
             label = "standart=* shift=8";
-            bindings = <&kp AMPERSAND>, <&kp NUMBER_8>;
+            bindings = <&kp ASTERISK>, <&kp NUMBER_8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -94,7 +94,7 @@
         sym_to_num_0: sym_to_num_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "standart=) shift=0";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp NUMBER_0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp NUMBER_0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -114,11 +114,11 @@
 
             label = "Base";
             bindings = <
-&kp ESC         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)       &kp LS(NUMBER_5)                                   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)     &kp LS(NUMBER_2)
-&kp TAB         &kp Q             &kp W             &kp E             &kp R                  &kp T                                              &kp Y             &kp U             &kp I             &kp O             &kp P                &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LCTRL       &kp A             &kp S             &kp D             &kp F                  &kp G                                              &kp H             &kp J             &kp K             &kp L             &kp SEMI             &mt GRAVE SQT
-&kp LEFT_SHIFT  &kp Z             &kp X             &kp C             &kp V                  &kp B             &kp LS(MINUS)         &kp EQUAL  &kp N             &kp M             &kp COMMA         &kp DOT           &mt BACKSLASH SLASH  &none
-                                                    &none             &mt CAPSLOCK LEFT_GUI  &mo 1             &mt LEFT_ALT ENTER    &kp SPACE  &kp BACKSPACE     &mo 1             &kp DELETE
+&kp ESC         &sym_to_num_1  &sym_to_num_2  &sym_to_num_3  &sym_to_num_4          &sym_to_num_5                                         &sym_to_num_6  &sym_to_num_7  &sym_to_num_8   &sym_to_num_9  &sym_to_num_0  &kp LS(PRINTSCREEN)
+&kp TAB         &kp Q          &kp W          &kp E          &kp R                  &kp T                                                 &kp Y          &kp U          &kp I           &kp O          &kp P          &mt RIGHT_BRACKET LEFT_BRACKET
+&kp LCTRL       &kp A          &kp S          &kp D          &kp F                  &kp G                                                 &kp H          &kp J          &kp K           &kp L          &kp SEMI       &mt GRAVE SQT
+&kp LEFT_SHIFT  &kp Z          &kp X          &kp C          &kp V                  &kp B          &kp MINUS             &kp EQUAL        &kp N          &kp M          &kp UNDERSCORE  &kp COMMA      &kp PERIOD     &mt BACKSLASH SLASH
+                                              &tog 3         &mt CAPSLOCK LEFT_GUI  &mo 1          &mt LEFT_ALT ENTER    &mt ENTER SPACE  &kp BACKSPACE  &mo 1          &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -137,7 +137,7 @@
 &kp F1          &kp F2  &kp F3        &kp F4        &kp F5        &kp F6                                                   &kp F7            &kp F8    &kp F9        &kp F10    &kp F11  &kp F12
 &none           &none   &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp C_VOL_UP                                             &none             &none     &kp UP_ARROW  &none      &none    &none
 &kp LEFT_SHIFT  &none   &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp C_VOL_DN                                             &kp HOME          &kp LEFT  &kp DOWN      &kp RIGHT  &kp END  &none
-&kp LCTRL       &none   &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp K_MUTE    &mo 2           &none                      &kp LC(LEFT_WIN)  &none     &none         &none      &none    &none
+&kp LCTRL       &none   &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp K_MUTE    &mo 2           &kp PRINTSCREEN            &kp LC(LEFT_WIN)  &none     &none         &none      &none    &none
                                       &none         &none         &none         &kp NUMBER_0    &mt LC(LEFT_ALT) NUMBER_0  &kp LEFT_SHIFT    &trans    &trans
             >;
 
@@ -154,6 +154,16 @@
             >;
 
             label = "BT LAYER";
+        };
+
+        numpad {
+            bindings = <
+&trans   &trans  &trans  &trans  &trans  &trans                          &trans        &trans        &trans        &trans    &trans        &trans
+&kp TAB  &trans  &trans  &trans  &trans  &trans                          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans        &trans
+&trans   &trans  &trans  &trans  &trans  &trans                          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp UP_ARROW  &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT  &kp DOWN      &kp RIGHT
+                         &trans  &trans  &trans  &tog 0    &kp NUMBER_0  &trans        &trans        &trans
+            >;
         };
     };
 };
