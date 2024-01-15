@@ -159,9 +159,9 @@
         numpad {
             bindings = <
 &trans   &trans  &trans  &trans  &trans  &trans                          &trans        &trans        &trans        &trans    &trans        &trans
-&kp TAB  &trans  &trans  &trans  &trans  &trans                          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans        &trans
-&trans   &trans  &trans  &trans  &trans  &trans                          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp UP_ARROW  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT  &kp DOWN      &kp RIGHT
+&kp TAB  &none   &none   &none   &none   &none                           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &none         &trans
+&trans   &none   &none   &none   &none   &none                           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp UP_ARROW  &trans
+&trans   &none   &none   &none   &none   &none   &trans    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT  &kp DOWN      &kp RIGHT
                          &tog 0  &trans  &trans  &tog 0    &kp NUMBER_0  &trans        &trans        &trans
             >;
         };
