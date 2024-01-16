@@ -114,11 +114,11 @@
 
             label = "Base";
             bindings = <
-&kp ESC                &sym_to_num_1  &sym_to_num_2  &sym_to_num_3  &sym_to_num_4          &sym_to_num_5                                     &sym_to_num_6  &sym_to_num_7  &sym_to_num_8  &sym_to_num_9  &sym_to_num_0  &kp PRINTSCREEN
-&mt RET RIGHT_BRACKET  &kp Q          &kp W          &kp E          &kp R                  &kp T                                             &kp Y          &kp U          &kp I          &kp O          &kp P          &kp LEFT_BRACKET
-&kp LCTRL              &kp A          &kp S          &kp D          &kp F                  &kp G                                             &kp H          &kp J          &kp K          &kp L          &kp SEMI       &mt GRAVE SQT
-&kp LEFT_ALT           &kp Z          &kp X          &kp C          &kp V                  &kp B          &mt MINUS EQUAL       &mt EQUAL B  &kp N          &kp M          &kp COMMA      &kp PERIOD     &kp SLASH      &mt BACKSLASH SLASH
-                                                     &tog 3         &mt CAPSLOCK LEFT_GUI  &mo 1          &mt LEFT_ALT ENTER    &kp SPACE    &kp BACKSPACE  &mo 1          &kp DELETE
+&kp ESC                &sym_to_num_1  &sym_to_num_2  &sym_to_num_3  &sym_to_num_4          &sym_to_num_5                                       &sym_to_num_6  &sym_to_num_7  &sym_to_num_8  &sym_to_num_9  &sym_to_num_0  &kp PRINTSCREEN
+&mt RET RIGHT_BRACKET  &kp Q          &kp W          &kp E          &kp R                  &kp T                                               &kp Y          &kp U          &kp I          &kp O          &kp P          &kp LEFT_BRACKET
+&kp LCTRL              &kp A          &kp S          &kp D          &kp F                  &kp G                                               &kp H          &kp J          &kp K          &kp L          &kp SEMI       &mt GRAVE SQT
+&kp LEFT_ALT           &kp Z          &kp X          &kp C          &kp V                  &kp B          &mt MINUS EQUAL         &mt EQUAL B  &kp N          &kp M          &kp COMMA      &kp PERIOD     &kp SLASH      &mt BACKSLASH SLASH
+                                                     &tog 3         &mt CAPSLOCK LEFT_GUI  &mo 1          &mt LEFT_SHIFT ENTER    &kp SPACE    &kp BACKSPACE  &mo 1          &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
