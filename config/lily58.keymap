@@ -103,7 +103,7 @@
         space_ret: space_ret {
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_RET";
-            bindings = <&kp SPACE>, <&kp ENTER>;
+            bindings = <&kp SPACE>, <&kp LS(ENTER)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
