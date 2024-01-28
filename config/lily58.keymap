@@ -120,6 +120,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        lang {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <52 36>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
