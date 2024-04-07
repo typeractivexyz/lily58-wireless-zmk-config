@@ -64,6 +64,15 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        to_rus: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 4 &kp LS(RIGHT_ALT)>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -80,7 +89,7 @@
 &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                                    &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &kp BSLH
 &kp GRAVE     &kp B   &kp Y   &kp O   &kp U    &apos                                     &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
 &kp LEFT_ALT  &kp C   &kp I   &kp E   &kp A    &comma                                    &period        &kp H             &kp T              &kp S   &kp N   &kp Q
-&kp LCTRL     &kp G   &kp X   &kp J   &kp K    &kt MINUS       &none        &none        &slash         &kp R             &kp M              &kp F   &kp P   &to 4
+&kp LCTRL     &kp G   &kp X   &kp J   &kp K    &kt MINUS       &none        &none        &slash         &kp R             &kp M              &kp F   &kp P   &to_rus
                               &none   &kp TAB  &kp LEFT_SHIFT  &lt 1 RET    &lt 1 SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
