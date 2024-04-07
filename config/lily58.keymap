@@ -68,7 +68,11 @@
         to_rus: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4>, <&macro_press>, <&kp LS(RIGHT_ALT)>;
+            bindings 
+                = <&macro_tap &to 4>
+                , <&macro_press &kp LS(RIGHT_ALT)>
+                , <&macro_tap &kp LSHFT>
+                , <&macro_release &kp LS(RIGHT_ALT)>;
 
             label = "NEW_MACRO";
         };
