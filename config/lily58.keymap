@@ -77,11 +77,31 @@
 
             label = "Base";
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                                    &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &kp BSLH
-&kp GRAVE  &kp B   &kp Y   &kp O   &kp U      &apos                                     &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
-&none      &kp C   &kp I   &kp E   &kp A      &comma                                    &period        &kp H             &kp T              &kp S   &kp N   &kp Q
-&kp LCTRL  &kp G   &kp X   &kp J   &kp K      &kt MINUS       &none        &none        &slash         &kp R             &kp M              &kp F   &kp P   &to 4
-                           &none   &lt 2 TAB  &kp LEFT_SHIFT  &lt 1 RET    &lt 1 SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp EQUAL     &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                                    &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &kp BSLH
+&kp GRAVE     &kp B   &kp Y   &kp O   &kp U      &apos                                     &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
+&kp LEFT_ALT  &kp C   &kp I   &kp E   &kp A      &comma                                    &period        &kp H             &kp T              &kp S   &kp N   &kp Q
+&kp LCTRL     &kp G   &kp X   &kp J   &kp K      &kt MINUS       &none        &none        &slash         &kp R             &kp M              &kp F   &kp P   &to 4
+                              &none   &lt 3 TAB  &kp LEFT_SHIFT  &lt 1 RET    &lt 1 SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        raise_layer {
+            // ------------------------------------------------------------------------------------------------------------
+            // | F1 | F2 | F3 | F4 | F5 | F6  |                    | F7  | F8  | F9 |F10 | F11 | F12|
+            // |    |    |  3 | 2  | 1  |vol_+|                    |     |     |  ^ |    |     |    |
+            // |    |    |  6 | 5  | 4  |vol_-|                    |HOME | <-  |  v | -> | END |    |
+            // |    | 0  |  9 | 8  | 7  |vol_0| BT_LAYER |    |    |     |PAUSE|NEXT|PREV|     |    |
+            //                |    |    |     |     0    |    |    |SHIFT|     |    |
+
+            label = "Raise";
+            bindings = <
+&kp F1  &kp F2  &kp F3        &kp F4        &kp F5  &kp F6                          &kp F7            &kp F8            &kp F9        &kp F10     &kp F11  &kp F12
+&none   &none   &kp N3        &kp N2        &kp N1  &kp C_VOL_UP                    &none             &none             &kp UP_ARROW  &none       &none    &none
+&trans  &none   &kp N6        &kp N5        &kp N4  &kp C_VOL_DN                    &kp HOME          &kp LEFT          &kp DOWN      &kp RIGHT   &kp END  &none
+&trans  &kp N0  &kp NUMBER_9  &kp NUMBER_8  &kp N7  &kp K_MUTE    &mo 3     &none   &kp LC(LEFT_WIN)  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none    &none
+                              &trans        &trans  &trans        &kp N0    &trans  &kp LEFT_SHIFT    &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -103,26 +123,6 @@
 &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp F11    &kp F12  &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
                                        &trans        &trans        &trans        &trans     &trans   &trans        &trans         &trans
             >;
-        };
-
-        raise_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | F1 | F2 | F3 | F4 | F5 | F6  |                    | F7  | F8  | F9 |F10 | F11 | F12|
-            // |    |    |  3 | 2  | 1  |vol_+|                    |     |     |  ^ |    |     |    |
-            // |    |    |  6 | 5  | 4  |vol_-|                    |HOME | <-  |  v | -> | END |    |
-            // |    | 0  |  9 | 8  | 7  |vol_0| BT_LAYER |    |    |     |PAUSE|NEXT|PREV|     |    |
-            //                |    |    |     |     0    |    |    |SHIFT|     |    |
-
-            label = "Raise";
-            bindings = <
-&kp F1  &kp F2  &kp F3        &kp F4        &kp F5  &kp F6                          &kp F7            &kp F8            &kp F9        &kp F10     &kp F11  &kp F12
-&none   &none   &kp N3        &kp N2        &kp N1  &kp C_VOL_UP                    &none             &none             &kp UP_ARROW  &none       &none    &none
-&trans  &none   &kp N6        &kp N5        &kp N4  &kp C_VOL_DN                    &kp HOME          &kp LEFT          &kp DOWN      &kp RIGHT   &kp END  &none
-&trans  &kp N0  &kp NUMBER_9  &kp NUMBER_8  &kp N7  &kp K_MUTE    &mo 3     &none   &kp LC(LEFT_WIN)  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none    &none
-                              &trans        &trans  &trans        &kp N0    &trans  &kp LEFT_SHIFT    &trans            &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         bt_layer {
