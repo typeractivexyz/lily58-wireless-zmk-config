@@ -97,11 +97,11 @@
 
             label = "Raise";
             bindings = <
-&kp F1  &kp F2  &kp F3        &kp F4        &kp F5  &kp F6                          &kp F7            &kp F8            &kp F9        &kp F10     &kp F11  &kp F12
-&none   &none   &kp N3        &kp N2        &kp N1  &kp C_VOL_UP                    &none             &none             &kp UP_ARROW  &none       &none    &none
-&trans  &none   &kp N6        &kp N5        &kp N4  &kp C_VOL_DN                    &kp HOME          &kp LEFT          &kp DOWN      &kp RIGHT   &kp END  &none
-&trans  &kp N0  &kp NUMBER_9  &kp NUMBER_8  &kp N7  &kp K_MUTE    &mo 3     &none   &kp LC(LEFT_WIN)  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none    &none
-                              &trans        &trans  &trans        &kp N0    &trans  &kp LEFT_SHIFT    &trans            &trans
+&none   &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                               &kp F7          &kp F8            &kp F9        &kp F10     &kp F11    &kp F12
+&none   &none      &none      &none      &kp LC(R)  &kp C_VOL_UP                         &kp LC(Y)       &none             &kp UP_ARROW  &none       &kp LC(P)  &none
+&trans  &none      &kp LC(S)  &kp N5     &kp LC(F)  &kp C_VOLUME_DOWN                    &kp HOME        &kp LEFT          &kp DOWN      &kp RIGHT   &kp END    &none
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp K_MUTE         &mo 3     &none   &none           &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none      &none
+                              &trans     &trans     &trans             &kp N0    &trans  &kp LEFT_SHIFT  &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
