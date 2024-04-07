@@ -91,16 +91,16 @@
             // ------------------------------------------------------------------------------------------------------------
             // |    |    |    |    |         |     |                                      |      |      |    |     |     |     |
             // | F1 | F2 | F3 | F4 | F5      | F6  |                                      |  F7  | F8   | F9 | F10 | F11 | F12 |
-            // |    | !  | @  | #  | $       | %   |                                      |  ^   | &    | *  | (   |  )  |     |
             // |    | 1  | 2  | 3  | 4       | 5   |    "-"    |              |   "="     |  6   | 7    | 8  | 9   |  0  |     |
+            // |    | !  | @  | #  | $       | %   |                                      |  ^   | &    | *  | (   |  )  |     |
             //                | <- |RAISE TAB|SHIFT|LOWER ENTER|              |LOWER SPACE| RAISE| BSPC | -> |
 
             label = "lower";
             bindings = <
 &none   &none            &none         &none         &none         &none                                &none         &none          &none         &none                 &none                  &none
 &kp F1  &kp F2           &kp F3        &kp F4        &kp F5        &kp F6                               &kp F7        &kp F8         &kp F9        &kp F10               &kp F11                &kp F12
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp MINUS    &kp PLUS  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp N9                &kp NUMBER_0           &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                          &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
                                        &trans        &trans        &trans        &trans       &trans    &trans        &trans         &trans
             >;
         };
