@@ -73,13 +73,13 @@
                 <&to 4>,
                 <&macro_pause_for_release>,
                 <&macro_press>,
-                <&kp LS(RIGHT_ALT)>,
+                <&kp LEFT_ALT>,
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LS(RIGHT_ALT)>;
+                <&kp LEFT_ALT>;
 
             label = "NEW_MACRO";
         };
@@ -92,13 +92,13 @@
                 <&to 0>,
                 <&macro_pause_for_release>,
                 <&macro_press>,
-                <&kp LS(RIGHT_ALT)>,
+                <&kp LEFT_ALT>,
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LS(RIGHT_ALT)>;
+                <&kp LEFT_ALT>;
 
             label = "TO_ENG";
         };
