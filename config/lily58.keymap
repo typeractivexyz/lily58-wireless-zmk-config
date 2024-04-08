@@ -121,7 +121,7 @@
 &kp GRAVE     &kp B   &kp Y   &kp O    &kp U   &apos                                          &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
 &kp LEFT_ALT  &kp C   &kp I   &kp E    &kp A   &comma                                         &period        &kp H             &kp T              &kp S   &kp N   &kp Q
 &kp LCTRL     &kp G   &kp X   &kp J    &kp K   &kt MINUS       &kp ESCAPE    &kp PRINTSCREEN  &slash         &kp R             &kp M              &kp F   &kp P   &to_rus
-                              &kp TAB  &mo 3   &kp LEFT_SHIFT  &lt 3 RET     &lt 3 SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                              &kp TAB  &mo 3   &kp LEFT_SHIFT  &lt 2 RET     &lt 2 SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
