@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -120,7 +119,7 @@
 &kp EQUAL     &kp N1  &kp N2  &kp N3   &kp N4  &kp N5                                         &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &kp BSLH
 &kp GRAVE     &kp B   &kp Y   &kp O    &kp U   &apos                                          &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
 &kp LEFT_ALT  &kp C   &kp I   &kp E    &kp A   &comma                                         &period        &kp H             &kp T              &kp S   &kp N   &kp Q
-&kp LCTRL     &kp G   &kp X   &kp J    &kp K   &kt MINUS       &kp ESCAPE    &kp PRINTSCREEN  &slash         &kp R             &kp M              &kp F   &kp P   &to_rus
+&kp LCTRL     &kp G   &kp X   &kp J    &kp K   &kp MINUS       &kp ESCAPE    &kp PRINTSCREEN  &slash         &kp R             &kp M              &kp F   &kp P   &to_rus
                               &kp TAB  &mo 3   &kp LEFT_SHIFT  &lt 2 RET     &lt 2 SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
