@@ -70,7 +70,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&to 0>,
+                <&to 2>,
                 <&macro_pause_for_release>,
                 <&macro_press>,
                 <&kp LEFT_ALT>,
@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&to 1>,
+                <&to 0>,
                 <&macro_pause_for_release>,
                 <&macro_press>,
                 <&kp LEFT_ALT>,
@@ -107,16 +107,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_for_rus {
-            bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &trans
-&kp GRAVE  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&trans     &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&trans     &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng
-                           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
         default_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4       |  5   |                               |  6   |  7    |  8    |  9   |   0   |   PSCRN |
@@ -131,10 +121,20 @@
 &kp GRAVE     &kp B   &kp Y   &kp O    &kp U   &apos                                          &semicolon     &kp L             &kp D              &kp W   &kp V   &kp Z
 &kp LEFT_ALT  &kp C   &kp I   &kp E    &kp A   &comma                                         &period        &kp H             &kp T              &kp S   &kp N   &kp Q
 &kp LCTRL     &kp G   &kp X   &kp J    &kp K   &kt MINUS       &kp ESCAPE    &kp PRINTSCREEN  &slash         &kp R             &kp M              &kp F   &kp P   &to_rus
-                              &kp TAB  &mo 3   &kp LEFT_SHIFT  &lt 2 RET     &lt 2 SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                              &kp TAB  &mo 3   &kp LEFT_SHIFT  &lt 3 RET     &lt 3 SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        qwerty_for_rus {
+            bindings = <
+&trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &trans
+&kp GRAVE  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
+&trans     &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans     &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng
+                           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
 
         lower {
