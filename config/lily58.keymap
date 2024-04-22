@@ -123,6 +123,22 @@
 
             label = "MACOS_PRINTSCREEN";
         };
+
+        to_rus_macos: to_rus_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 1>, <&macro_tap>, <&kp GLOBE>;
+
+            label = "TO_RUS_MACOS";
+        };
+
+        to_eng_macos: to_eng_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&to 0>, <&macro_tap>, <&kp GLOBE>;
+
+            label = "TO_ENG_MACOS";
+        };
     };
 
     keymap {
@@ -138,11 +154,11 @@
 
             label = "Base";
             bindings = <
-&kp ESCAPE    &kp N1  &kp N2  &kp N3            &kp N4  &kp N5                                  &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &macos_printscreen
-&kp GRAVE     &kp B   &kp Y   &kp O             &kp U   &kp APOS                                &kp SEMICOLON  &kp L             &kp D              &kp W   &kp V   &kp Z
-&kp LEFT_ALT  &kp C   &kp I   &kp E             &kp A   &kp COMMA                               &kp PERIOD     &kp H             &kp T              &kp S   &kp N   &kp Q
-&kp LCTRL     &kp G   &kp X   &kp J             &kp K   &kp MINUS       &kp EQUAL    &kp GLOBE  &kp SLASH      &kp R             &kp M              &kp F   &kp P   &to_rus
-                              &mt LEFT_GUI TAB  &mo 3   &kp LEFT_SHIFT  &lt 2 RET    &kp SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESCAPE    &kp N1  &kp N2  &kp N3            &kp N4  &kp N5                                      &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &macos_printscreen
+&kp GRAVE     &kp B   &kp Y   &kp O             &kp U   &kp APOS                                    &kp SEMICOLON  &kp L             &kp D              &kp W   &kp V   &kp Z
+&kp LEFT_ALT  &kp C   &kp I   &kp E             &kp A   &kp COMMA                                   &kp PERIOD     &kp H             &kp T              &kp S   &kp N   &kp Q
+&kp LCTRL     &kp G   &kp X   &kp J             &kp K   &kp MINUS       &kp EQUAL    &to_rus_macos  &kp SLASH      &kp R             &kp M              &kp F   &kp P   &to_rus
+                              &mt LEFT_GUI TAB  &mo 3   &kp LEFT_SHIFT  &lt 2 RET    &kp SPACE      &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -150,11 +166,11 @@
 
         qwerty_for_rus {
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &trans
-&kp GRAVE  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&trans     &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&trans     &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng
-                           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans                           &trans  &trans  &trans     &trans   &trans    &trans
+&kp GRAVE  &kp Q   &kp W   &kp E   &kp R   &kp T                            &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
+&trans     &kp A   &kp S   &kp D   &kp F   &kp G                            &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans     &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &to_eng_macos  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng
+                           &trans  &trans  &trans  &trans    &trans         &trans  &trans  &trans
             >;
         };
 
