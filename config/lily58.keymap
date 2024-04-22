@@ -78,7 +78,9 @@
                 <&kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp GLOBE>;
 
             label = "NEW_MACRO";
         };
@@ -97,7 +99,9 @@
                 <&kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp GLOBE>;
 
             label = "TO_ENG";
         };
