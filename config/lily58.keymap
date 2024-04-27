@@ -86,7 +86,7 @@
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&kp GLOBE>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 250>,
                 <&to 3>;
 
             label = "TO_RUS_MACOS";
@@ -99,7 +99,7 @@
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&kp GLOBE>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 250>,
                 <&to 2>;
 
             label = "TO_ENG_MACOS";
