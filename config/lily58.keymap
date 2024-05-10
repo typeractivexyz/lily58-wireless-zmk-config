@@ -24,7 +24,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&to 1>,
+                <&to 0>,
                 <&macro_pause_for_release>,
                 <&macro_press>,
                 <&kp LEFT_ALT>,
@@ -86,7 +86,7 @@
                 <&macro_tap>,
                 <&kp GLOBE>,
                 <&macro_wait_time 250>,
-                <&to 3>;
+                <&to 2>;
 
             label = "TO_RUS_MACOS";
         };
@@ -98,7 +98,7 @@
                 <&macro_tap>,
                 <&kp GLOBE>,
                 <&macro_wait_time 250>,
-                <&to 2>;
+                <&to 1>;
 
             label = "TO_ENG_MACOS";
         };
@@ -107,33 +107,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        engrammer_win {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4       |  5   |                               |  6   |  7    |  8    |  9   |   0   |   PSCRN |
-            // | GUI ] |  Q  |  W  |  E   |  R       |  T   |                               |  Y   |  U    |  I    |  O   |   P   |   \ [   |
-            // | CTRL `|  A  |  S  |  D   |  F       |  G   |                               |  H   |  J    |  K    |  L   |   ;   |CTRL "'" |
-            // | ALT   |  Z  |  X  |  C   |  V       |  B   |   "-"  |              |  "="  |  N   |  M    |  ,    |  .   |   /   | ALT "-" |
-            //                     | <-   | RAISE TAB| SHIFT|  LOWER ENTER |  | LOWER SPACE | RAISE| BSPC  | ->    |
-
-            label = "Base";
-            bindings = <
-&kp ESCAPE    &kp N1  &kp N2  &kp N3            &kp N4  &kp N5                                        &kp N6         &kp N7            &kp N8             &kp N9  &kp N0  &kp BSLH
-&kp GRAVE     &kp B   &kp Y   &kp O             &kp U   &kp APOS                                      &kp SEMICOLON  &kp L             &kp D              &kp W   &kp V   &kp Z
-&kp LEFT_ALT  &kp C   &kp I   &kp E             &kp A   &kp COMMA                                     &kp PERIOD     &kp H             &kp T              &kp S   &kp N   &kp Q
-&kp LCTRL     &kp G   &kp X   &kp J             &kp K   &kp MINUS       &kp EQUAL    &kp PRINTSCREEN  &kp SLASH      &kp R             &kp M              &kp F   &kp P   &to_rus_win
-                              &mt LEFT_GUI TAB  &mo 5   &kp LEFT_SHIFT  &lt 4 RET    &kp SPACE        &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
         qwerty_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &trans
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng_win
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSLASH
+&trans   &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
+&trans   &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans   &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &to_eng_win
+                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -144,7 +124,7 @@
 &kp GRAVE         &kp B   &kp Y   &kp O             &kp U   &kp APOS                                &kp SEMICOLON  &kp L             &kp D              &kp W   &kp V   &kp Z
 &kp LEFT_CONTROL  &kp C   &kp I   &kp E             &kp A   &kp COMMA                               &kp PERIOD     &kp H             &kp T              &kp S   &kp N   &kp Q
 &kp LEFT_COMMAND  &kp G   &kp X   &kp J             &kp K   &kp MINUS       &kp EQUAL    &kp GLOBE  &kp SLASH      &kp R             &kp M              &kp F   &kp P   &to_rus_macos
-                                  &mt LEFT_ALT TAB  &mo 5   &kp LEFT_SHIFT  &lt 4 RET    &kp SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                  &mt LEFT_ALT TAB  &mo 4   &kp LEFT_SHIFT  &lt 3 RET    &kp SPACE  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -191,7 +171,7 @@
 &none   &none      &none      &none      &none            &none                                &none           &none             &none         &none       &none      &none
 &none   &none      &none      &none      &kp LC(R)        &kp C_VOL_UP                         &kp LC(Y)       &none             &kp UP_ARROW  &none       &kp LC(P)  &none
 &trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)        &kp C_VOLUME_DOWN                    &kp HOME        &kp LEFT          &kp DOWN      &kp RIGHT   &kp END    &none
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &mt LG(V) LC(V)  &kp K_MUTE         &mo 6     &none   &none           &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none      &none
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &mt LG(V) LC(V)  &kp K_MUTE         &mo 5     &none   &none           &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_PREV  &none      &none
                               &trans     &trans           &trans             &trans    &trans  &kp LEFT_SHIFT  &trans            &trans
             >;
 
@@ -201,7 +181,7 @@
         bt_layer {
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none  &none  &none  &none  &none  &none
-&none        &to 0         &to 2         &none         &none         &sys_reset                    &none  &none  &none  &none  &none  &none
+&none        &to 0         &to 1         &none         &none         &sys_reset                    &none  &none  &none  &none  &none  &none
 &sys_reset   &none         &none         &none         &none         &none                         &none  &none  &none  &none  &none  &none
 &bootloader  &none         &none         &none         &none         &none         &none    &none  &none  &none  &none  &none  &none  &none
                                          &none         &none         &none         &none    &none  &none  &none  &none
