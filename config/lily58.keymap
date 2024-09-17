@@ -15,21 +15,25 @@
         window_left {
             bindings = <&kp LG(LEFT)>;
             key-positions = <52 30>;
+            layers = <0>;
         };
 
         window_right {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <52 33>;
+            layers = <0>;
         };
 
         window_down {
             bindings = <&kp LG(DOWN)>;
             key-positions = <52 31>;
+            layers = <0>;
         };
 
         window_up {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <52 32>;
+            layers = <0>;
         };
     };
 
