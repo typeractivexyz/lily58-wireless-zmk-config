@@ -24,11 +24,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                  &kp N6  &kp N7    &kp N8     &kp N9   &kp N0            &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp G                                   &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON     &kp APOSTROPHE
-&kp LCTRL  &kp A   &kp R   &kp S     &kp T     &kp D                                   &kp H   &kp N     &kp E      &kp I    &kp O             &kp LEFT_BRACKET
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ESC       &kp COLON         &kp K   &kp M     &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_BRACKET
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET            &tog 2  &kp BSPC  &kp RGUI
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0         &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp G                           &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp APOSTROPHE
+&kp LCTRL  &kp A   &kp R   &kp S     &kp T     &kp D                           &kp H   &kp N     &kp E      &kp I    &kp O          &kp LEFT_BRACKET
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ESC      &kp COLON  &kp K   &kp M     &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET    &tog 2  &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -36,23 +36,22 @@
 
         window_management {
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans            &trans               &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans
+&bt BT_CLR_ALL  &trans  &trans    &trans    &trans        &trans                       &trans              &trans              &trans            &trans               &trans  &trans
+&trans          &trans  &trans    &trans    &trans        &trans                       &trans              &trans              &trans            &trans               &trans  &trans
+&trans          &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT                    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&trans          &trans  &trans    &trans    &trans        &trans     &trans    &trans  &kp LEFT_SHIFT      &kp LEFT_ALT        &kp LEFT_CONTROL  &trans               &trans  &trans
+                                  &trans    &trans        &trans     &trans    &trans  &trans              &trans              &trans
             >;
         };
 
         numpad_layer {
             bindings = <
-&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PG_UP)    &kp LG(PAGE_DOWN)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
-                                 &trans   &trans   &tog 2                &trans           &trans             &trans             &trans        &trans
+&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                       &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                       &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                            &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PG_UP)     &kp LG(PAGE_DOWN)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
+                                 &trans   &trans   &tog 2                &kp LEFT_SHIFT    &kp LEFT_ALT       &trans             &trans        &trans
             >;
         };
     };
 };
-
