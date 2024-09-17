@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -35,11 +36,11 @@
 
         window_management {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans            &trans               &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                    &trans              &trans              &trans            &trans               &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans            &trans               &trans  &trans
+                                &trans  &trans  &trans  &trans    &trans  &trans              &trans              &trans
             >;
         };
 
