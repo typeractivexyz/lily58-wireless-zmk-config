@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        window_left {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <52 30>;
+        };
+
+        window_right {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <52 33>;
+        };
+
+        window_down {
+            bindings = <&kp LG(DOWN)>;
+            key-positions = <52 31>;
+        };
+
+        window_up {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <52 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,14 +46,24 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                  &kp N6  &kp N7    &kp N8     &kp N9   &kp N0            &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                   &kp Y   &kp U     &kp I      &kp O    &kp P             &kp APOSTROPHE
+&kp LCTRL  &kp A   &kp S   &kp D     &kp F     &kp G                                   &kp H   &kp J     &kp K      &kp L    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ESC      &kp LS(SEMICOLON)  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH          &kp RSHFT
+                           &kp LALT  &kp LGUI  &trans  &kp SPACE    &kp RET            &tog 1  &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        numpad_layer {
+            bindings = <
+&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PG_UP)    &kp LG(PAGE_DOWN)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
+                                 &trans   &trans   &tog 0                &trans           &trans             &trans             &kp NUMBER_0  &trans
+            >;
         };
 
         lower_layer {
