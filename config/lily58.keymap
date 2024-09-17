@@ -11,6 +11,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+            label = "DOUBLE_COLON";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,10 +53,10 @@
 
         symbols {
             bindings = <
-&kp ESC    &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                        &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
-&kp TAB    &kp LBKT       &kp RBKT    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(PIPE)                         &kp LS(PLUS)   &kp EQUAL     &kp LS(TILDE)  &kp GRAVE     &kp SEMI      &kp BSLH
-&kp LCTRL  &kp LS(COLON)  &kp SEMI    &kp LS(LT)     &kp LS(GT)    &kp LS(QMARK)                        &kp FSLH       &kp DOT       &kp COMMA      &kp SPACE     &kp SPACE     &kp LS(DQT)
-&kp LSHFT  &trans         &trans      &trans         &trans        &trans         &trans       &trans   &trans         &trans        &trans         &trans        &trans        &trans
+&kp ESC    &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                        &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(UNDER)
+&kp TAB    &kp LBKT       &kp RBKT    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(PIPE)                         &kp LS(PLUS)   &kp EQUAL     &kp LS(TILDE)  &kp GRAVE      &kp SEMI      &kp BSLH
+&kp LCTRL  &kp LS(COLON)  &kp SEMI    &kp LS(LT)     &kp LS(GT)    &kp LS(QMARK)                        &kp FSLH       &kp DOT       &kp COMMA      &double_colon  &kp SPACE     &kp LS(DQT)
+&kp LSHFT  &trans         &trans      &trans         &trans        &trans         &trans       &trans   &trans         &trans        &trans         &trans         &trans        &trans
                                       &trans         &trans        &trans         &kp SPACE    &kp RET  &trans         &trans        &trans
             >;
         };
