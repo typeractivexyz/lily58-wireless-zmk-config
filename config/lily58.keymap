@@ -35,8 +35,8 @@
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0         &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp APOSTROPHE
-&kp LCTRL  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M   &kp N     &kp E      &kp I    &kp O          &kp LEFT_BRACKET
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp D     &kp B   &kp ESC      &kp COLON  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+&kp LSHFT  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M   &kp N     &kp E      &kp I    &kp O          &kp LEFT_BRACKET
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp D     &kp B   &kp ESC      &kp COLON  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET    &mo 2   &kp BSPC  &kp RGUI
             >;
         };
@@ -53,21 +53,21 @@
 
         symbols {
             bindings = <
-&kp ESC    &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                        &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(UNDER)
-&kp TAB    &kp LBKT       &kp RBKT    &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(PIPE)                         &kp LS(PLUS)   &kp EQUAL     &kp LS(TILDE)  &kp GRAVE      &kp SEMI      &kp BSLH
-&kp LCTRL  &kp LS(COLON)  &kp SEMI    &kp LS(LT)     &kp LS(GT)    &kp LS(QMARK)                        &kp FSLH       &kp DOT       &kp COMMA      &double_colon  &kp SPACE     &kp LS(DQT)
-&kp LSHFT  &trans         &trans      &trans         &trans        &trans         &trans       &trans   &trans         &trans        &trans         &trans         &trans        &trans
-                                      &trans         &trans        &trans         &kp SPACE    &kp RET  &trans         &trans        &trans
+&kp TILDE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH              &kp DOLLAR             &kp PERCENT                           &kp CARET  &kp AMPERSAND         &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&trans     &trans            &trans             &trans                &trans                 &trans                                &trans     &trans                &trans           &trans                &trans                 &trans
+&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON                         &kp COLON  &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp LESS_THAN         &kp GREATER_THAN       &trans
+&trans     &trans            &trans             &trans                &kp SLASH              &kp PLUS       &kp PIPE    &kp EQUAL  &kp MINUS  &kp NON_US_BACKSLASH  &trans           &trans                &trans                 &trans
+                                                &trans                &trans                 &trans         &trans      &trans     &trans     &trans                &trans
             >;
         };
 
         numpad_layer {
             bindings = <
-&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
-                                 &trans   &trans   &to 0                 &kp LEFT_SHIFT       &trans         &to 0              &trans        &trans
+&trans     &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans     &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
+&kp LCTRL  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
+                            &trans   &trans   &to 0                 &kp LEFT_SHIFT       &trans         &to 0              &trans        &trans
             >;
         };
 
@@ -75,8 +75,8 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4        &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9   &kp N0    &kp GRAVE
 &kp TAB    &kp Q   &kp W   &kp E     &kp R         &kp T                          &kp Y   &kp U     &kp I          &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A   &kp S   &kp D     &kp F         &kp G                          &kp H   &kp J     &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C     &kp V         &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+&kp LSHFT  &kp A   &kp S   &kp D     &kp F         &kp G                          &kp H   &kp J     &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp V         &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
                            &kp LALT  &kp LEFT_GUI  &to 0   &kp SPACE    &kp RET   &to 0   &kp BSPC  &kp RIGHT_GUI
             >;
         };
