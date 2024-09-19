@@ -43,11 +43,11 @@
 
         window_management {
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans        &trans        &trans            &trans                           &trans          &trans        &trans            &trans     &trans  &trans
-&trans          &trans  &trans        &trans        &trans            &trans                           &trans          &trans        &trans            &trans     &trans  &trans
-&trans          &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)                    &kp LEFT        &kp DOWN      &kp UP            &kp RIGHT  &trans  &trans
-&trans          &trans  &trans        &trans        &trans            &trans         &trans    &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &trans  &trans
-                                      &trans        &trans            &trans         &trans    &trans  &to 3           &to 4         &trans
+&bt BT_CLR_ALL  &trans  &trans        &trans        &trans            &trans                                             &kp LC(PG_UP)   &trans        &trans            &trans     &trans  &trans
+&trans          &trans  &trans        &trans        &trans            &trans                                             &kp LC(PG_UP)   &trans        &trans            &trans     &trans  &trans
+&trans          &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT        &kp DOWN      &kp UP            &kp RIGHT  &trans  &trans
+&trans          &trans  &trans        &trans        &trans            &trans         &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &trans  &trans
+                                      &trans        &trans            &trans         &trans               &trans         &to 3           &to 4         &trans
             >;
         };
 
@@ -63,11 +63,11 @@
 
         numpad_layer {
             bindings = <
-&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                       &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                       &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                            &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PG_UP)     &kp LG(PAGE_DOWN)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
-                                 &trans   &trans   &to 0                 &kp LEFT_SHIFT    &trans             &to 0              &trans        &trans
+&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans          &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans          &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &trans             &kp NUMBER_7  &kp N8        &kp NUMBER_9  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans   &trans   &trans   &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &trans             &trans        &kp NUMBER_0  &trans        &trans  &kp RIGHT_SHIFT
+                                 &trans   &trans   &to 0                 &kp LEFT_SHIFT       &trans         &to 0              &trans        &trans
             >;
         };
 
