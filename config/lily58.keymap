@@ -36,7 +36,7 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0         &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J   &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp APOSTROPHE
 &kp LSHFT  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M   &kp N     &kp E      &kp I    &kp O          &kp LEFT_BRACKET
-&kp LCTRL  &kp Z   &kp X   &kp C     &kp D     &kp B   &kp ESC      &kp COLON  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp D     &kp V   &kp ESC      &kp COLON  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET    &mo 2   &kp BSPC  &kp RGUI
             >;
         };
