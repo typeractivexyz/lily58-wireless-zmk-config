@@ -44,7 +44,7 @@
         window_management {
             bindings = <
 &bt BT_CLR_ALL  &trans  &trans         &trans             &trans            &trans                                             &kp LC(PG_UP)   &trans        &trans            &trans     &trans  &trans
-&trans          &trans  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &trans          &trans        &trans            &trans     &trans  &trans
+&trans          &trans  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PG_UP)   &trans        &trans            &trans     &trans  &trans
 &trans          &trans  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT        &kp DOWN      &kp UP            &kp RIGHT  &trans  &trans
 &trans          &trans  &trans         &trans             &trans            &trans         &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &trans  &trans
                                        &trans             &trans            &trans         &trans               &trans         &to 3           &to 4         &trans
