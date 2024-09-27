@@ -18,6 +18,13 @@
             bindings = <&kp COLON &kp COLON>;
             label = "DOUBLE_COLON";
         };
+
+        dotdotslash: dotdotslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp FSLH>;
+            label = "DOTDOTSLASH";
+        };
     };
 
     keymap {
@@ -47,17 +54,17 @@
 &none           &none  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PAGE_DOWN)  &none         &none             &none      &none  &none
 &trans          &none  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT  &none  &none
 &trans          &none  &none          &none              &none             &none          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT     &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none  &none
-                                      &trans             &trans            &trans         &none                &none          &to 3              &to 4         &none
+                                      &trans             &trans            &trans         &trans               &trans         &to 3              &to 4         &trans
             >;
         };
 
         symbols {
             bindings = <
-&kp TILDE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH              &kp DOLLAR             &kp PERCENT                           &kp CARET  &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&none      &none             &none              &none                 &none                  &none                                 &none      &none           &none            &none                 &none                  &none
-&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON                         &kp COLON  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LESS_THAN         &kp GREATER_THAN       &none
-&trans     &none             &none              &none                 &kp SLASH              &kp PLUS       &kp PIPE    &kp EQUAL  &kp MINUS  &kp BACKSLASH   &none            &none                 &none                  &none
-                                                &trans                &trans                 &none          &none       &none      &trans     &none           &none
+&trans  &trans            &trans         &trans            &trans             &trans                          &trans         &trans         &trans                &trans                 &trans        &trans
+&trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &double_colon  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
+&trans  &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                         &trans            &trans             &trans        &trans    &trans  &trans         &trans         &trans
             >;
         };
 
@@ -67,7 +74,7 @@
 &none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
 &kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp NUMBER_7  &kp N8        &kp NUMBER_9  &none  &none
 &kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &none         &kp NUMBER_0  &none         &none  &kp RIGHT_SHIFT
-                            &none    &none    &to 0                 &kp LEFT_SHIFT       &none          &to 0              &none         &none
+                            &trans   &trans   &to 0                 &kp LEFT_SHIFT       &none          &to 0              &trans        &trans
             >;
         };
 
