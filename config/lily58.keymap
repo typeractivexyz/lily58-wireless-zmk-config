@@ -74,7 +74,7 @@
 &none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
 &kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp NUMBER_7  &kp N8        &kp NUMBER_9  &none  &none
 &kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &none         &kp NUMBER_0  &none         &none  &kp RIGHT_SHIFT
-                            &trans   &trans   &to 0                 &kp LEFT_SHIFT       &none          &to 0              &trans        &trans
+                            &trans   &trans   &to 0                 &trans               &trans         &to 0              &trans        &trans
             >;
         };
 
