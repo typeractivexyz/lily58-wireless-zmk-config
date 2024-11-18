@@ -22,6 +22,11 @@
             bindings = <&to 4>;
             key-positions = <16 15 14>;
         };
+
+        tog_mouse {
+            bindings = <&tog 6>;
+            key-positions = <41 44>;
+        };
     };
 
     macros {
@@ -111,13 +116,23 @@
             >;
         };
 
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans            &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mkp LCLK       &mwh SCROLL_DOWN  &mwh MOVE_UP     &mkp RCLK        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &mwh MOVE_LEFT    &mwh MOVE_RIGHT  &trans           &trans  &trans
+                        &trans  &trans  &to 0   &trans    &trans  &to 0           &trans            &trans
+            >;
+        };
+
         window_management {
             bindings = <
 &bt BT_CLR_ALL  &none  &none          &none              &none             &none                                              &kp LC(PG_UP)      &none         &none             &none      &none  &none
 &none           &none  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PAGE_DOWN)  &none         &none             &none      &none  &none
 &trans          &none  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT  &none  &none
 &trans          &none  &none          &none              &none             &none          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT     &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none  &none
-                                      &trans             &trans            &trans         &trans               &trans         &to 7              &to 4         &trans
+                                      &trans             &trans            &trans         &trans               &trans         &to 8              &to 4         &trans
             >;
         };
 
