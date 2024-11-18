@@ -9,7 +9,19 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to-numpad {
+            bindings = <&to 3>;
+            key-positions = <19 20 21>;
+        };
+
+        to_qwerty {
+            bindings = <&to 4>;
+            key-positions = <16 15 14>;
+        };
+    };
 
     macros {
         double_colon: double_colon {
@@ -44,37 +56,37 @@
 &kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J   &kp L     &kp U       &kp Y    &kp SEMICOLON  &kp APOSTROPHE
 &kp LSHFT  &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M   &kp N     &kp E       &kp I    &kp O          &kp LEFT_BRACKET
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp D     &kp V   &kp ESC      &kp COLON  &kp K   &kp H     &kp COMMA   &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
-                           &kp LALT  &kp LGUI  &mo 5   &kp SPACE    &kp RET    &mo 2   &kp BSPC  &kp DELETE
+                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET    &mo 2   &kp BSPC  &kp DELETE
             >;
         };
 
-        window_management {
+        left_mods {
             bindings = <
-&bt BT_CLR_ALL  &none  &none          &none              &none             &none                                              &kp LC(PG_UP)      &none         &none             &none      &none  &none
-&none           &none  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PAGE_DOWN)  &none         &none             &none      &none  &none
-&trans          &none  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT  &none  &none
-&trans          &none  &none          &none              &none             &none          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT     &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none  &none
-                                      &trans             &trans            &trans         &trans               &trans         &to 3              &to 4         &trans
+&trans  &trans         &trans              &trans        &trans          &trans                          &kp LC(PG_UP)  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans     &trans  &trans
+&trans  &kp LG(LEFT)   &kp LG(DOWN)        &kp LG(UP)    &kp LG(RIGHT)   &trans                          &kp LC(PG_DN)  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans     &trans  &trans
+&trans  &sk LEFT_GUI   &sk LEFT_ALT        &sk LCTRL     &sk LEFT_SHIFT  &kp LEFT_GUI                    &kp LEFT       &kp DOWN           &kp UP                &kp RIGHT  &trans  &trans
+&trans  &kp LG(MINUS)  &kp LG(UNDERSCORE)  &kp LG(PLUS)  &kp LG(EQUAL)   &trans        &trans    &trans  &trans         &trans             &trans                &trans     &trans  &trans
+                                           &trans        &trans          &trans        &trans    &trans  &trans         &trans             &trans
             >;
         };
 
         symbols {
             bindings = <
-&trans  &trans            &trans         &trans            &trans             &trans                          &trans         &trans         &trans                &trans                 &trans        &trans
-&trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &double_colon  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
-&trans  &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
-                                         &trans            &trans             &trans        &trans    &trans  &trans         &trans         &trans
+&trans     &trans            &trans         &trans            &trans             &trans                          &trans         &trans         &trans                &trans                 &trans        &trans
+&kp GRAVE  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                      &kp AMPERSAND  &double_colon  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
+&trans     &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                        &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans     &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &dotdotslash  &trans    &trans  &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                            &trans            &trans             &trans        &trans    &trans  &trans         &trans         &trans
             >;
         };
 
-        numpad_layer {
+        numpad_layer_2 {
             bindings = <
-&none      &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-&none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
-&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp NUMBER_7  &kp N8        &kp NUMBER_9  &none  &none
-&kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &none         &kp NUMBER_0  &none         &none  &kp RIGHT_SHIFT
-                            &trans   &trans   &to 0                 &trans               &trans         &to 0              &trans        &trans
+&none      &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &none   &none   &none   &none   &none
+&none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp N1  &kp N2  &kp N3  &none   &none
+&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp N4  &kp N5  &kp N6  &none   &none
+&kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &kp N7  &kp N8  &kp N9  &kp N0  &kp RIGHT_SHIFT
+                            &trans   &trans   &to 0                 &trans               &trans         &to 0              &trans  &trans
             >;
         };
 
@@ -88,16 +100,6 @@
             >;
         };
 
-        left_mods {
-            bindings = <
-&trans  &trans         &trans              &trans        &trans          &trans                          &kp LC(PG_UP)  &trans    &trans    &trans  &trans     &trans
-&trans  &kp LG(LEFT)   &kp LG(DOWN)        &kp LG(UP)    &kp LG(RIGHT)   &trans                          &kp LC(PG_DN)  &trans    &trans    &trans  &trans     &trans
-&trans  &sk LEFT_GUI   &sk LEFT_ALT        &sk LCTRL     &sk LEFT_SHIFT  &kp LEFT_GUI                    &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &kp LG(MINUS)  &kp LG(UNDERSCORE)  &kp LG(PLUS)  &kp LG(EQUAL)   &trans        &trans    &trans  &trans         &trans    &trans    &trans  &trans     &trans
-                                           &trans        &trans          &trans        &trans    &trans  &trans         &trans    &trans
-            >;
-        };
-
         right_mods {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans     &trans        &trans        &trans
@@ -105,6 +107,26 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &sk LEFT_SHIFT  &sk LCTRL  &sk LEFT_ALT  &sk LEFT_GUI  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
+            >;
+        };
+
+        window_management {
+            bindings = <
+&bt BT_CLR_ALL  &none  &none          &none              &none             &none                                              &kp LC(PG_UP)      &none         &none             &none      &none  &none
+&none           &none  &kp LG(MINUS)  &kp LS(LG(UNDER))  &kp LS(LG(PLUS))  &kp LG(EQUAL)                                      &kp LC(PAGE_DOWN)  &none         &none             &none      &none  &none
+&trans          &none  &kp LG(LEFT)   &kp LG(DOWN)       &kp LG(UP_ARROW)  &kp LG(RIGHT)                                      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT  &none  &none
+&trans          &none  &none          &none              &none             &none          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &kp LEFT_SHIFT     &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none  &none
+                                      &trans             &trans            &trans         &trans               &trans         &to 7              &to 4         &trans
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+&none      &kp F1  &kp F2   &kp F3   &kp F4   &kp C_BRIGHTNESS_INC                                      &kp LC(PAGE_UP)    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&none      &kp F5  &kp F6   &kp F7   &kp F8   &kp C_BRIGHTNESS_DEC                                      &kp LC(PAGE_DOWN)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
+&kp LSHFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP                                           &none              &kp NUMBER_7  &kp N8        &kp NUMBER_9  &none  &none
+&kp LCTRL  &none   &none    &none    &none    &kp C_VOL_DN          &kp LG(PAGE_DOWN)    &kp LG(PG_UP)  &none              &none         &kp NUMBER_0  &none         &none  &kp RIGHT_SHIFT
+                            &trans   &trans   &to 0                 &trans               &trans         &to 0              &trans        &trans
             >;
         };
     };
