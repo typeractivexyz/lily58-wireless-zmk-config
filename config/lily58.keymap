@@ -75,7 +75,7 @@
             display-name = "Lower";
             bindings = <
 &kp F1  &kp F2          &kp F3           &kp F4                &kp F5                 &kp F6                                        &kp C_PLAY_PAUSE  &kp C_NEXT      &kp C_MUTE    &kp C_VOL_DN     &kp C_VOLUME_UP  &bt BT_SEL 0
-&kp F7  &kp F8          &kp F9           &kp F10               &kp F11                &kp F12                                       &kp HOME          &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans           &bt BT_SEL 1
+&kp F7  &kp F8          &kp F9           &kp F10               &kp F11                &kp F12                                       &kp HOME          &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT       &bt BT_SEL 1
 &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE                                     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PIPE         &bt BT_CLR
 &trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &kp SCROLLLOCK    &kp PRINTSCREEN  &trans            &trans          &trans        &trans           &kp BACKSLASH    &trans
                                          &trans                &trans                 &trans     &trans            &trans           &trans            &trans          &trans
@@ -86,11 +86,11 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans        &trans        &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8        &kp N9        &kp ASTERISK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp NUMBER_5  &kp N6        &kp MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N0  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS      &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp PERIOD
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9      &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6      &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N1  &kp N2  &kp N3      &kp MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N0  &trans  &kp PERIOD  &kp PLUS      &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
