@@ -65,11 +65,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE      &kp N1        &kp N2      &kp N3          &kp N4   &kp N5                                  &kp N6     &kp N7         &kp N8           &kp N9           &kp N0            &kp MINUS
-&kp TAB         &kp Q         &kp W       &kp E           &kp R    &kp T                                   &kp Y      &kp U          &kp I            &kp O            &kp P             &kp EQUAL
-&lt 2 CAPSLOCK  &kp A         &kp S       &kp D           &kp F    &kp G                                   &kp H      &kp J          &kp K            &kp L            &kp SEMI          &kp SQT
-&kp LCTRL       &mt LSHIFT Z  &mt LALT X  &mt LGUI C      &lt 1 V  &kp B       &kp GRAVE    &alt_tab       &kp N      &lt 1 M        &mt RGUI COMMA   &mt RALT PERIOD  &mt RSHIFT SLASH  &kp RCTRL
-                                          &kp SCROLLLOCK  &sl 3    &kp DELETE  &kp ENTER    &kp BACKSPACE  &kp SPACE  &kp BACKSLASH  &kp PRINTSCREEN
+&kp ESCAPE      &kp N1                &kp N2              &kp N3              &kp N4   &kp N5                                  &kp N6     &kp N7         &kp N8                  &kp N9                   &kp N0                    &kp MINUS
+&kp TAB         &kp Q                 &kp W               &kp E               &kp R    &kp T                                   &kp Y      &kp U          &kp I                   &kp O                    &kp P                     &kp EQUAL
+&lt 2 CAPSLOCK  &kp A                 &kp S               &kp D               &kp F    &kp G                                   &kp H      &kp J          &kp K                   &kp L                    &kp SEMI                  &kp SQT
+&kp LCTRL       &my_mod_tap LSHIFT Z  &my_mod_tap LALT X  &my_mod_tap LGUI C  &lt 1 V  &kp B       &kp GRAVE    &alt_tab       &kp N      &lt 1 M        &my_mod_tap RGUI COMMA  &my_mod_tap RALT PERIOD  &my_mod_tap RSHIFT SLASH  &kp RCTRL
+                                                          &kp SCROLLLOCK      &sl 3    &kp DELETE  &kp ENTER    &kp BACKSPACE  &kp SPACE  &kp BACKSLASH  &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
