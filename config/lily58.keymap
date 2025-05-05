@@ -93,6 +93,8 @@
 
         hrm-lh-capsword:
 
+        hrm-lh-capsword:
+
         hrm-lh-capsword {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM-LH-CAPSWORD";
@@ -108,8 +110,6 @@
         };
 
         hrm-lh-capsword:
-
-        hrm-lh-capsword { compatible = "zmk,behavior-hold-tap"; };
     };
 
     keymap {
