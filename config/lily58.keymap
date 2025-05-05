@@ -56,13 +56,6 @@
     };
 
     behaviors {
-        td_shft_caps: td_shft_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
-        };
-
         hrm_lh: hrm_lh {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_LH";
