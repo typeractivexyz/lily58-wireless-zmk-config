@@ -83,13 +83,6 @@
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <1 1 2 3 4 5 12 13 17 25 26 27 28 29 36 37 38 39 40 41 14 15 16 42 52>;
         };
-
-        hrm-lh-capsword:
-
-        hrm-lh-capsword:
-
-
-        hrm-lh-capsword:
     };
 
     keymap {
