@@ -111,7 +111,7 @@
         media_bt {
             bindings = <
 &trans  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans        &trans        &trans                           &trans      &trans             &trans           &trans  &trans  &trans
-&trans  &trans                  &trans                   &out OUT_USB  &bt BT_SEL 0  &bt BT_DISC 0                    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans
+&trans  &out OUT_TOG            &trans                   &out OUT_USB  &bt BT_SEL 0  &bt BT_DISC 0                    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans
 &trans  &trans                  &trans                   &out OUT_BLE  &bt BT_SEL 1  &bt BT_DISC 1                    &kp C_PREV  &kp C_PP           &kp C_NEXT       &trans  &trans  &trans
 &trans  &trans                  &bt BT_CLR_ALL           &bt BT_CLR    &bt BT_SEL 2  &bt BT_DISC 2  &trans    &trans  &trans      &trans             &trans           &trans  &trans  &trans
                                                          &trans        &trans        &trans         &trans    &trans  &trans      &trans             &trans
